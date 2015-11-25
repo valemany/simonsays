@@ -88,10 +88,10 @@ body {
 }
 
 .pattern-box {
-     float: left;
+    float: left;
     height: 60%;
     width: 23%;
-    border: 10px solid #000;
+    border: 33px solid #000;
     background: yellow;
     margin-top: 14px;
 }
@@ -153,6 +153,9 @@ body {
   margin-bottom: 25px;
 }
 
+.highlight { 
+  border-color: white;
+}
 
 
 
