@@ -21,6 +21,7 @@ Author: Victor Alemany
 /*******************************************/
 
 body {
+  margin-top: 3%;
   color: #000;
   font-size: 12px;
   line-height: 1.4;
@@ -28,7 +29,7 @@ body {
   background: url(../images/website-background.jpg) center;
   background-size: cover;
   min-height: 1200px;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 
@@ -40,8 +41,18 @@ body {
   font-size: 18px;
   margin-left: 50px;
   margin-top: 20px;
-  margin-bottom: 0px;
+  margin-bottom: 40px;
   color: white;
+  font-weight: bolder;
+  display: inline;
+}
+
+.round {
+  margin-left: 45%;
+  display: inline;
+  font-size: 18px;
+  color: white;
+  font-weight: bolder;
 }
 
 #container > h2 > span {
@@ -52,7 +63,7 @@ body {
   float: right;
   position: relative;
   right: 13%;
-  top: 7em;
+  top: 5em;
   width: 300px;
   background: url(../images/instruction_background.jpg) top no-repeat;
   background-size: cover;
@@ -60,7 +71,9 @@ body {
   box-shadow: inset 0 0 5px rgba(0,0,0,.75);
   text-align: left;
   border-radius: 10px;
-  border: 9px solid gray;
+      border: 10px solid black;
+    font-family: fantasy;
+
 
 }
 
@@ -92,7 +105,6 @@ body {
     height: 60%;
     width: 23%;
     border: 33px solid #000;
-    background: yellow;
     margin-top: 14px;
 }
 
@@ -100,30 +112,31 @@ body {
    width: 13%;
     position: relative;
     height: 35%;
-    border: 3px solid #777;
+    border: 3px solid white;
     margin-left: 17.1%;
     border-radius: 117px;
     z-index: 999;
     margin-top: 3px;
     top: 10.5rem;
-    background: #ddd;
+    background: black;
     margin-bottom: 3px;
     text-align: center;
 }
 
 #red-box {
     border-radius: 132px 0 0;
-    background: red;
+    background: #CD5555;
 }
 
 #yellow-box {
     clear: left;
   border-radius: 0 0px 0 132px;
   margin-bottom: 33px;
+  background: #ffffc7;
 }
 
 #blue-box {
- background: blue;
+ background: #5CACEE;
     margin-left: 14px;
     border-radius: 0 132px 0 0px;
 }
@@ -131,11 +144,11 @@ body {
 #green-box {
       margin-left: 16px;
     border-radius: 0px 0 132px 0;
-    background: green;
+    background: #8CDD81;
 }
 
 #play-button {
-  color: #000;
+  color: white;
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
@@ -151,11 +164,24 @@ body {
   font-size: 18px;
   margin-left: 50px;
   margin-bottom: 25px;
+  font-weight: bolder;
 }
 
 .highlight { 
   border-color: white;
 }
 
+.active {
+  opacity: 1 !important;
+}
 
+.hoverable:hover {
+  cursor: pointer;
+}
+
+#lose-msg {
+  color: red;
+  margin-left: 40%;
+  font-size: 24px;
+}
 
